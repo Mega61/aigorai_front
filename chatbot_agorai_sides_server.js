@@ -6,6 +6,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const messageContainer = document.querySelector('.message_container');
     const recommendedPromptsContainer = document.querySelector('.recommended_prompt_container');
     const recommendedPrompts = document.querySelectorAll('.recommended_prompt');
+    const gotoclassicbutton = document.querySelector('.go_to_classic_button');
+    const gotoclassictooltip = document.querySelector('.go_to_classic_tooltip');
+
+    gotoclassicbutton.addEventListener('click', function(){
+        window.location.href = 'https://savia-demo2.myshopify.com/collections/all'
+    })
+
+    setTimeout(() => {
+        gotoclassictooltip.classList.add('visible');
+        setTimeout(() => {
+            gotoclassictooltip.classList.remove('visible');
+        }, 3000)
+    }, 3000)
 
     sendButton.addEventListener('click', async function () {
         const userMessage = inputField.value.trim();

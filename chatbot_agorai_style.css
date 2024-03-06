@@ -7,6 +7,59 @@
     --secondary_blue: #2392FB
 }
 
+.go_to_classic_wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    max-width: 15%
+}
+
+.go_to_classic_wrapper:hover .go_to_classic_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.go_to_classic_button {
+    font-size: large;
+    background-color: var(--secondary_blue);
+    border-radius: 10px;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    padding: 0.5rem;
+    color: var(--background_color);
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.go_to_classic_button:hover {
+    box-shadow: 0px 0px 5px rgba(47, 57, 84, 0.7);
+    /* Adds a subtle shadow */
+}
+
+.go_to_classic_button:active {
+    transform: scale(0.95);
+    /* Slightly shrinks the button */
+}
+
+.go_to_classic_tooltip{
+    visibility: hidden;
+    background-color: var(--principal_blue);
+    text-align: center;
+    color: var(--background_color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
 
 .chatbot_wrapper {
     display: flex;
@@ -23,9 +76,9 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--background_color);
-    height: 87vh;
+    height: 98vh;
     overflow: hidden;
-    width: 70%;
+    width: 100%;
 }
 
 /* Logo management */
@@ -37,6 +90,7 @@
 
 .agorai_image_logo_container {
     position: relative;
+    margin-top: 1rem;
     width: 7rem;
     /* Same as the circle */
     height: 7rem;
