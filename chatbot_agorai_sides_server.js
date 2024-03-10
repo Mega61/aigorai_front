@@ -20,12 +20,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 3000)
     }, 3000)
 
+    inputField.addEventListener('keydown', function(event){
+        if (event.key === "Enter" || event.keycode === 13) {
+            event.preventDefault();
+            sendButton.click();
+        }
+    })
+
     sendButton.addEventListener('click', async function () {
         const userMessage = inputField.value.trim();
         if (userMessage) {
             displayMessage(userMessage, 'user_message');
             inputField.value = ''; // Clear the input field
-            recommendedPromptsContainer.style.display = 'none'; // Hide recommended prompts
+            recommendedPromptsContainer.style.visibility = 'hidden'; // Hide recommended prompts
+            messageContainer.style.display = 'flex' 
             displayLoadingIndicator(); // Display loading indicator
 
             try {
@@ -62,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Create image element
         const imgElement = document.createElement('img');
-        imgElement.src = className === 'user_message' ? 'https://github.com/Mega61/sample_web_app/blob/master/Icon%20awesome-user-alt.png?raw=true' : 'https://github.com/Mega61/sample_web_app/blob/master/agorAI_logo_alternate_color.png?raw=true';
+        imgElement.src = className === 'user_message' ? 'https://github.com/Mega61/sample_web_app/blob/master/Icon%20awesome-user-alt-color2.png?raw=true' : 'https://github.com/Mega61/sample_web_app/blob/master/agorAI_logo_alternate_color.png?raw=true';
         imgElement.alt = className === 'user_message' ? 'You' : 'Bot';
 
         // Append image circle and image to image wrapper

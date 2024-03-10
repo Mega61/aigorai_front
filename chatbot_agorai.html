@@ -4,35 +4,31 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Aigorai</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='chatbot_agorai_style.css'>
     <script src="chatbot_agorai_sides_server.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div class="chatbot_wrapper">
+    <nav class="nav_bar">
+        <div class="logo_container">
+            <img src="https://github.com/Mega61/sample_web_app/blob/master/get%20your%20key%20to%20unlock%20value%20(11).png?raw=true" alt="Aigorai Logo">
+        </div>
         <div class="go_to_classic_wrapper">
-            <button class="go_to_classic_button" >Go To Classic!</button>
+            <button class="go_to_classic_button">Go To Classic!</button>
             <div class="go_to_classic_tooltip">
                 If you want to access the traditional e-commerce website, go to classic!
             </div>
         </div>
+    </nav>
+    <div class="chatbot_wrapper">
         <div class="chatbot_container">
-            <div class="agorai_logo_container">
-                <div class="agorai_image_logo_container">
-                    <div class="agorai_logo_circle"></div>
-                    <img class="agorai_logo_image"
-                        src="https://github.com/Mega61/sample_web_app/blob/master/agorAI_HD_face_logo.png?raw=true"
-                        alt="agorai_logo">
-                </div>
-                <h2>Aigorai Powered Chat</h2>
-            </div>
             <div class="message_container">
-                <!-- <div class="wrapper_message">
-                    <div class="message_img_wrapper">
+                <div class="wrapper_message">
+                    <!-- <div class="message_img_wrapper">
                         <div class="user_img_circle"></div>
-                        <img src="https://github.com/Mega61/sample_web_app/blob/master/Icon%20awesome-user-alt.png?raw=true" alt="You" >
+                        <img src="https://github.com/Mega61/sample_web_app/blob/master/Icon%20awesome-user-alt-color2.png?raw=true" alt="You" >
                     </div>
                     <div class="user_message">This is a user message</div>
                 </div>
@@ -52,16 +48,32 @@
                     </div>
                     <div class="loading_indicator">
                         <span class="loading_dots">...</span>
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
             </div>
-            <div class="recommended_prompt_container">
-                <div class="recommended_prompt">I need a creativity focused product</div>
-                <div class="recommended_prompt">I need the list of IT HW services</div>
-                <div class="recommended_prompt">I wish to see the featured products</div>
-                <div class="recommended_prompt">Go back to classic!</div>
+            <div class="message_input_container">
+                <div class="textbar_container">
+                    <input class="message_input_user" placeholder="Start by typing what are you looking for"
+                        type="text">
+                    <button class="send_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21.014" height="19.398"
+                            viewBox="0 0 21.014 19.398">
+                            <path id="Icon_ionic-md-send" data-name="Icon ionic-md-send"
+                                d="M3.375,23.9l21.014-9.7L3.375,4.5v7.544L18.429,14.2,3.375,16.354Z"
+                                transform="translate(-3.375 -4.5)" fill="#f4f6fa" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="recommended_prompt_container">
+                    <!-- <div class="recommended_prompt">I need a creativity focused product</div>
+                    <div class="recommended_prompt">I need the list of IT HW services</div>
+                    <div class="recommended_prompt">I wish to see the featured products</div> -->
+                    <div class="recommended_prompt">Need office gear!</div>
+                    <div class="recommended_prompt">I need a quote!</div>
+                    <div class="recommended_prompt">Go back to classic!</div>
+                </div>
             </div>
-            <div class="nps_container">
+            <!-- <div class="nps_container">
                 <span>Please help us rate this answer!</span>
                 <div class="nps_button_container">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
@@ -75,17 +87,7 @@
                             fill="#2f3954" />
                     </svg>
                 </div>
-            </div>
-            <div class="message_input_container">
-                <input class="message_input_user" placeholder="Start by typing what are you looking for" type="text">
-                <button class="send_button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21.014" height="19.398" viewBox="0 0 21.014 19.398">
-                        <path id="Icon_ionic-md-send" data-name="Icon ionic-md-send"
-                            d="M3.375,23.9l21.014-9.7L3.375,4.5v7.544L18.429,14.2,3.375,16.354Z"
-                            transform="translate(-3.375 -4.5)" fill="#f4f6fa" />
-                    </svg>
-                </button>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
