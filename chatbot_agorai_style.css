@@ -53,7 +53,7 @@
     /* Slightly shrinks the button */
 }
 
-.go_to_classic_tooltip{
+.go_to_classic_tooltip {
     position: absolute;
     top: 3rem;
     visibility: hidden;
@@ -96,7 +96,7 @@
     display: flex;
 }
 
-.logo_container img{
+.logo_container img {
     height: 3rem;
 }
 
@@ -311,7 +311,7 @@
     box-shadow: 0px 0px 15px rgba(47, 57, 84, 1);
 }
 
-.message_input_user::placeholder{
+.message_input_user::placeholder {
     color: var(--background_color);
     opacity: 80%;
 }
@@ -356,3 +356,100 @@
 }
 
 /* Input Container */
+
+/* ERP Connection */
+.erp-con {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 400px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    margin: 0 auto;
+    height: 48px;
+    width: 48px;
+    color: var(--secondary_blue);
+}
+
+h1 {
+    margin-top: 16px;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--principal_blue);
+}
+
+p {
+    margin-top: 16px;
+    color: var(--principal_blue);
+}
+
+.grid {
+    margin-top: 24px;
+    display: grid;
+    gap: 16px;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    font-size: 0.875em;
+    color: var(--principal_blue);
+}
+
+.font-medium {
+    font-weight: 500;
+    color: var(--principal_blue);
+}
+
+.button {
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 0.875em;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: var(--secondary_blue);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+    transition: var(--principal_blue) 0.5s;
+}
+
+.button:hover {
+    background-color: var(--principal_blue);
+}
+
+.button:focus {
+    outline: 2px solid var(--principal_blue);
+    outline-offset: 2px;
+}
+
+/* Logo management ERP */
+
+.logo_container_erp {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logo_container_erp img {
+    height: 4rem;
+}
+
+/* Logo management ERP */
