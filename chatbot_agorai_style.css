@@ -384,14 +384,14 @@
     color: var(--secondary_blue);
 }
 
-h1 {
+.erp_title {
     margin-top: 16px;
     font-size: 2em;
     font-weight: bold;
     color: var(--principal_blue);
 }
 
-p {
+.erp_description {
     margin-top: 16px;
     color: var(--principal_blue);
 }
